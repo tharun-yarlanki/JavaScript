@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h2>Check Console for Output</h2>
+ <script>
+// Declare with var
+var a = 5;
+console.log("this is a value : ",a);
 
+// Reassign with var
+var b = 5;
+b = 10; 
+console.log("this is b value : ",b); // 10
+
+// Redeclare with var
+var c = 5;
+var c = 20; // allowed
+console.log( "this is c value : " ,c); // 20
+
+// var inside a block
+if (true) {
+  var e = 50;
+}
+console.log("this is e value : ",e); // 50
+
+// var in loop
+for (var i = 0; i < 3; i++) {
+  console.log("this is looping 3 times : ",i); // 0, 1, 2
+}
+console.log("this is i value : ",i); // 3 (leaks outside loop)
+
+</script>
+</body>
+</html>
+
+output :
+ this is a value :  5
+ this is b value :  10
+ this is c value :  20
+ this is e value :  50
+ this is looping 3 times :  0
+ this is looping 3 times :  1
+ this is looping 3 times :  2
+ this is i value :  3
+==============================================================================================================================
+==============================================================================================================================
+==============================================================================================================================
+==============================================================================================================================
+==============================================================================================================================
+==============================================================================================================================
+==============================================================================================================================
