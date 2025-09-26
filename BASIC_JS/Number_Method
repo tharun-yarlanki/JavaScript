@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Number methods
+      let n = 100;
+      console.log(typeof n);
+      let n1 = "10";
+      console.log(typeof n1);
+      //1.Number()
+      console.log(Number(n1)); 
+      console.log(typeof Number(n1));
+
+      console.log(parseInt(n1));
+      console.log(typeof parseInt(n1));
+
+      console.log(parseFloat(n1));
+      console.log(typeof parseFloat(n1));
+
+      let price = "100rs";
+      console.log(Number(price)); //NaN
+      console.log(parseInt(price));
+      console.log(typeof parseInt(price));
+      console.log(parseFloat(price));
+      console.log(typeof parseFloat(price));
+
+      let n2 = "212.1234 rs";
+      console.log(parseInt(n2));
+      console.log(parseFloat(n2));
+
+      let n3 = "rs100";
+      console.log(parseInt(n3));
+
+      let n4 = "100 100";
+      console.log(parseInt(n4));
+    </script>
+  </body>
+</html>
+
+output :
+number
+index.html:14 string
+index.html:16 10
+index.html:17 number
+index.html:19 10
+index.html:20 number
+index.html:22 10
+index.html:23 number
+index.html:26 NaN
+index.html:27 100
+index.html:28 number
+index.html:29 100
+index.html:30 number
+index.html:33 212
+index.html:34 212.1234
+index.html:37 NaN
+index.html:40 100
 
