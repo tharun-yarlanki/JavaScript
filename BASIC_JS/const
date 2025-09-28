@@ -43,7 +43,8 @@ function testVar() {
 }
 testVar();
 ===========================================================================================================================================
-17. let is block-scoped
+* let is block-scoped
+
 function testLet() {
   let b = 10;
   if (true) {
@@ -54,17 +55,20 @@ function testLet() {
 }
 testLet();
 ===========================================================================================================================================
-18. const value can’t change
+* const value can’t change
+
 const color = "red";
-// color = "blue"; // ❌ Error
+// color = "blue"; //  Error
 console.log(color); // red
 ===========================================================================================================================================
-19. const object properties can change
+* const object properties can change
+
 const person = { name: "Ram" };
 person.name = "Tharun"; // ✅ allowed
 console.log(person.name); // Tharun
 ===========================================================================================================================================
-20. Best practice
+* Best practice
+
 let score = 50;   // use let if value changes
 const max = 100;  // use const if value never changes
 console.log(score, max); // 50 100
