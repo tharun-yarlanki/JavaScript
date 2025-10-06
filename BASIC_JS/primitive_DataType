@@ -1,0 +1,129 @@
+<!-- primitiveDT.html
+============== -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // primitive:string,number
+      //string
+      let str = "hello";
+      console.log(str.split(""));
+      console.log(str);
+
+      //number
+      console.log("hi" / 2); //NaN=>Not a number
+      console.log("hi" * 4);
+      console.log("hi" - 4);
+      console.log("hi" + 4); //hi4
+      console.log(0 / 0);
+      console.log(1 / 0);
+      console.log(typeof 1 / 0);
+      console.log(typeof Infinity); //number
+      console.log(typeof NaN);
+      console.log(Number.MAX_SAFE_INTEGER); //max accuracy number provided by JS
+      console.log(9007199254740991234); //no-accuracy
+
+      //BigInt:
+      //syntax: numSuffixedByn. i.e, numn
+      let n1 = 1;
+      console.log(typeof n1);
+
+      let n2 = 1n;
+      console.log(typeof n2);
+
+      //Ex
+      //   console.log(1n + 1); //err:Cannot mix BigInt with other data-types
+      console.log(1n + 1n);
+      // console.log(2n+2.5n)
+
+      let AmbaniBankBalance = 90071992547409912345n;
+      let deposit = 9999999999999999999999999n;
+      console.log(typeof deposit);
+      console.log(typeof AmbaniBankBalance);
+      let totalBal = AmbaniBankBalance + deposit;
+      console.log(`The total balance of Ambani is : ${totalBal}`);
+
+      console.log(Number.isFinite(1));
+      console.log(Number.isFinite(1 / 0));
+      console.log(Number.isFinite(1.234));
+      console.log(Number.isInteger(1.234));
+      console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER));
+      console.log(Number.isSafeInteger(9007199254740991));
+      console.log(Number.isNaN(1 / 0));
+      console.log(Number.isNaN(NaN));
+      console.log(2 * 3);
+      console.log(2 ** 3);
+      console.log(2 ** 53 - 1);
+      console.log(Number.MAX_SAFE_INTEGER);
+      //   ==(checks the only value); ===(checks value and DT)
+      console.log("12" == 12);
+      console.log("12" === 12);
+
+      //null and undefined
+      //   let age = prompt("Enter your age");
+      //   console.log(age);
+      console.log(n11); //ud
+      var n11 = null;
+      console.log(n11); //null
+      console.log(null == undefined); //null and ud return same value internally
+      let n12;
+      let n13 = null;
+      console.log(typeof n12); //ud
+      console.log(typeof n13); //object. Bug in JS
+      console.log(typeof null);
+      console.log(null === undefined);
+
+      //boolean:false,true
+      console.log(0 == false);
+      console.log(1 == true);
+      console.log(10 == true);
+      console.log(Boolean(10));
+      console.log(Boolean(-10));
+      console.log("true" == true);
+      console.log("1" == true);
+      console.log("0" == false); //type casting: from string to number
+      console.log("1.00" == true);
+      console.log("11" == true);
+      console.log("1.1" == true);
+
+      //   type constructors
+      //1.String
+      let str1 = "hello";
+      let str2 = String("hello");
+      console.log(str1);
+      console.log(str2);
+      console.log(typeof str1);
+      console.log(typeof str2);
+
+      //2.Number
+      let n21 = 10;
+      let n22 = Number(10);
+      console.log(n21);
+      console.log(n22);
+      console.log(typeof n21);
+      console.log(typeof n22);
+
+      //3.Bigint
+      let bigInt = BigInt(5);
+      console.log(bigInt);
+      let n34 = 234566;
+      console.log(BigInt(n34));
+
+      //Boolean
+      let b = true;
+      console.log(Boolean(b));
+
+      //no typeConstructors for the values 'null' and 'undefined'
+      //   console.log(null()); //err
+      console.log(undefined()); //err
+    </script>
+  </body>
+</html>
+OUTPUT :
+=======
+
