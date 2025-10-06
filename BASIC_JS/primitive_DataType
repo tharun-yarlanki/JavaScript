@@ -124,6 +124,70 @@
     </script>
   </body>
 </html>
+=============================================================================================================
 OUTPUT :
 =======
+Array(5)0: "h"1: "e"2: "l"3: "l"4: "o"length: 5[[Prototype]]: Array(0)
+index.html:16 hello
+index.html:19 NaN
+index.html:20 NaN
+index.html:21 NaN
+index.html:22 hi4
+index.html:23 NaN
+index.html:24 Infinity
+index.html:25 NaN
+index.html:26 number
+index.html:27 number
+index.html:28 9007199254740991
+index.html:29 9007199254740991000
+index.html:34 number
+index.html:37 bigint
+index.html:41 2n
+index.html:46 bigint
+index.html:47 bigint
+index.html:49 The total balance of Ambani is : 10000090071992547409912344
+index.html:51 true
+index.html:52 false
+index.html:53 true
+index.html:54 false
+index.html:55 true
+index.html:56 true
+index.html:57 false
+index.html:58 true
+index.html:59 6
+index.html:60 8
+index.html:61 9007199254740991
+index.html:62 9007199254740991
+index.html:64 true
+index.html:65 false
+index.html:70 undefined
+index.html:72 null
+index.html:73 true
+index.html:76 undefined
+index.html:77 object
+index.html:78 object
+index.html:79 false
+index.html:82 true
+index.html:83 true
+index.html:84 false
+index.html:85 true
+index.html:86 true
+index.html:87 false
+index.html:88 true
+index.html:89 true
+index.html:90 true
+index.html:91 false
+index.html:92 false
+index.html:98 hello
+index.html:99 hello
+index.html:100 string
+index.html:101 string
+index.html:106 10
+index.html:107 10
+index.html:108 number
+index.html:109 number
+index.html:113 5n
+index.html:115 234566n
+index.html:119 true
+=======================================================================================================================
 
