@@ -1,193 +1,91 @@
-    primitiveDT.html
-============================ 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <script>
-      // primitive:string,number
-      //string
-      let str = "hello";
-      console.log(str.split(""));
-      console.log(str);
+</head>
+<body>
+<script>
+// Examples of Array Methods
+// pop()
+// Removes last element of an array and returns it.
 
-      //number
-      console.log("hi" / 2); //NaN=>Not a number
-      console.log("hi" * 4);
-      console.log("hi" - 4);
-      console.log("hi" + 4); //hi4
-      console.log(0 / 0);
-      console.log(1 / 0);
-      console.log(typeof 1 / 0);
-      console.log(typeof Infinity); //number
-      console.log(typeof NaN);
-      console.log(Number.MAX_SAFE_INTEGER); //max accuracy number provided by JS
-      console.log(9007199254740991234); //no-accuracy
+let fruits = ["apple", "banana", "mango"];
+fruits.pop(); 
+console.log(fruits); // ["apple", "banana"]
 
-      //BigInt:
-      //syntax: numSuffixedByn. i.e, numn
-      let n1 = 1;
-      console.log(typeof n1);
+// push(arg/s)
+// Adds element(s) to the end of an array.
 
-      let n2 = 1n;
-      console.log(typeof n2);
+let colors = ["red", "green"];
+colors.push("blue");
+console.log(colors); // ["red", "green", "blue"]
 
-      //Ex
-      //   console.log(1n + 1); //err:Cannot mix BigInt with other data-types
-      console.log(1n + 1n);
-      // console.log(2n+2.5n)
+//  shift()
+// Removes first element of an array and returns it.
 
-      let AmbaniBankBalance = 90071992547409912345n;
-      let deposit = 9999999999999999999999999n;
-      console.log(typeof deposit);
-      console.log(typeof AmbaniBankBalance);
-      let totalBal = AmbaniBankBalance + deposit;
-      console.log(`The total balance of Ambani is : ${totalBal}`);
+let numbers = [10, 20, 30];
+numbers.shift();
+console.log(numbers); // [20, 30]
 
-      console.log(Number.isFinite(1));
-      console.log(Number.isFinite(1 / 0));
-      console.log(Number.isFinite(1.234));
-      console.log(Number.isInteger(1.234));
-      console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER));
-      console.log(Number.isSafeInteger(9007199254740991));
-      console.log(Number.isNaN(1 / 0));
-      console.log(Number.isNaN(NaN));
-      console.log(2 * 3);
-      console.log(2 ** 3);
-      console.log(2 ** 53 - 1);
-      console.log(Number.MAX_SAFE_INTEGER);
-      //   ==(checks the only value); ===(checks value and DT)
-      console.log("12" == 12);
-      console.log("12" === 12);
+//  unshift(arg/s)
+// Adds element(s) to the beginning of an array.
 
-      //null and undefined
-      //   let age = prompt("Enter your age");
-      //   console.log(age);
-      console.log(n11); //ud
-      var n11 = null;
-      console.log(n11); //null
-      console.log(null == undefined); //null and ud return same value internally
-      let n12;
-      let n13 = null;
-      console.log(typeof n12); //ud
-      console.log(typeof n13); //object. Bug in JS
-      console.log(typeof null);
-      console.log(null === undefined);
+let cities = ["Hyderabad", "Delhi"];
+cities.unshift("Mumbai");
+console.log(cities); // ["Mumbai", "Hyderabad", "Delhi"]
 
-      //boolean:false,true
-      console.log(0 == false);
-      console.log(1 == true);
-      console.log(10 == true);
-      console.log(Boolean(10));
-      console.log(Boolean(-10));
-      console.log("true" == true);
-      console.log("1" == true);
-      console.log("0" == false); //type casting: from string to number
-      console.log("1.00" == true);
-      console.log("11" == true);
-      console.log("1.1" == true);
+// slice(startIndex, endIndex)
+// Returns a new array from the given range.
+//Does not change the original array.
 
-      //   type constructors
-      //1.String
-      let str1 = "hello";
-      let str2 = String("hello");
-      console.log(str1);
-      console.log(str2);
-      console.log(typeof str1);
-      console.log(typeof str2);
+let animals = ["cat", "dog", "lion", "tiger"];
+let wild = animals.slice(2, 4);
+console.log(wild); // ["lion", "tiger"]
+console.log(animals); // ["cat", "dog", "lion", "tiger"]
 
-      //2.Number
-      let n21 = 10;
-      let n22 = Number(10);
-      console.log(n21);
-      console.log(n22);
-      console.log(typeof n21);
-      console.log(typeof n22);
+// splice(index, count, newElement/s)
+// Removes or replaces existing elements.
+// It changes the original array.
 
-      //3.Bigint
-      let bigInt = BigInt(5);
-      console.log(bigInt);
-      let n34 = 234566;
-      console.log(BigInt(n34));
+let cars = ["BMW", "Audi", "Tata"];
+cars.splice(1, 1, "Tesla"); 
+console.log(cars); // ["BMW", "Tesla", "Tata"]
 
-      //Boolean
-      let b = true;
-      console.log(Boolean(b));
+// reverse()
+// Reverses the order of the elements in place.
 
-      //no typeConstructors for the values 'null' and 'undefined'
-      //   console.log(null()); //err
-      console.log(undefined()); //err
-    </script>
-  </body>
+let nums = [1, 2, 3, 4];
+nums.reverse();
+console.log(nums); // [4, 3, 2, 1]
+
+// concat(arg/s)
+// Combines two or more arrays and returns a new array.
+
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let result = arr1.concat(arr2);
+console.log(result); // [1, 2, 3, 4]
+
+// join(arg)
+// Joins all elements into a string, using the given separator.
+
+let words = ["I", "love", "JS"];
+let sentence = words.join(" ");
+console.log(sentence); // "I love JS"
+
+// toString()
+// Converts array to a comma-separated string.
+
+let letters = ["a", "b", "c"];
+console.log(letters.toString()); // "a,b,c"
+
+
+</script>
+</body>
 </html>
-=============================================================================================================
+========================================================================================================
 OUTPUT :
-=======
-Array(5)0: "h"1: "e"2: "l"3: "l"4: "o"length: 5[[Prototype]]: Array(0)
-index.html:16 hello
-index.html:19 NaN
-index.html:20 NaN
-index.html:21 NaN
-index.html:22 hi4
-index.html:23 NaN
-index.html:24 Infinity
-index.html:25 NaN
-index.html:26 number
-index.html:27 number
-index.html:28 9007199254740991
-index.html:29 9007199254740991000
-index.html:34 number
-index.html:37 bigint
-index.html:41 2n
-index.html:46 bigint
-index.html:47 bigint
-index.html:49 The total balance of Ambani is : 10000090071992547409912344
-index.html:51 true
-index.html:52 false
-index.html:53 true
-index.html:54 false
-index.html:55 true
-index.html:56 true
-index.html:57 false
-index.html:58 true
-index.html:59 6
-index.html:60 8
-index.html:61 9007199254740991
-index.html:62 9007199254740991
-index.html:64 true
-index.html:65 false
-index.html:70 undefined
-index.html:72 null
-index.html:73 true
-index.html:76 undefined
-index.html:77 object
-index.html:78 object
-index.html:79 false
-index.html:82 true
-index.html:83 true
-index.html:84 false
-index.html:85 true
-index.html:86 true
-index.html:87 false
-index.html:88 true
-index.html:89 true
-index.html:90 true
-index.html:91 false
-index.html:92 false
-index.html:98 hello
-index.html:99 hello
-index.html:100 string
-index.html:101 string
-index.html:106 10
-index.html:107 10
-index.html:108 number
-index.html:109 number
-index.html:113 5n
-index.html:115 234566n
-index.html:119 true
-=======================================================================================================================
+======
 
