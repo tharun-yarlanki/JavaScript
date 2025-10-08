@@ -88,4 +88,15 @@ console.log(letters.toString()); // "a,b,c"
 ========================================================================================================
 OUTPUT :
 ======
+0: "apple"1: "banana"length: 2[[Prototype]]: Array(0)
+index.html:23 (3) ['red', 'green', 'blue']0: "red"1: "green"2: "blue"length: 3[[Prototype]]: Array(0)
+index.html:30 (2) [20, 30]0: 201: 30length: 2[[Prototype]]: Array(0)
+index.html:37 (3) ['Mumbai', 'Hyderabad', 'Delhi']0: "Mumbai"1: "Hyderabad"2: "Delhi"length: 3[[Prototype]]: Array(0)
+index.html:45 (2) ['lion', 'tiger']0: "lion"1: "tiger"length: 2[[Prototype]]: Array(0)
+index.html:46 (4) ['cat', 'dog', 'lion', 'tiger']0: "cat"1: "dog"2: "lion"3: "tiger"length: 4[[Prototype]]: Array(0)
+index.html:54 (3) ['BMW', 'Tesla', 'Tata']0: "BMW"1: "Tesla"2: "Tata"length: 3[[Prototype]]: Array(0)
+index.html:61 (4) [4, 3, 2, 1]0: 41: 32: 23: 1length: 4[[Prototype]]: Array(0)
+index.html:69 (4) [1, 2, 3, 4]0: 11: 22: 33: 4length: 4[[Prototype]]: Array(0)
+index.html:76 I love JS
+index.html:82 a,b,c
 
